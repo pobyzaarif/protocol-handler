@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protocol Handler</title>
+    <script defer src="script.js"></script>
+    <style>
+        #actionForm {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Protocol Handler</h1>
+    <form id="actionForm">
+        <label for="dataInput">Enter Data:</label>
+        <input type="text" id="dataInput" name="dataInput" required>
+        <label for="actionSelect">Select Action:</label>
+        <select id="actionSelect" name="actionSelect" required>
+            <option value="tel">Tel</option>
+            <option value="mailto">Mailto</option>
+            <option value="sip">SIP</option>
+            <option value="mailtosip">Mailto SIP</option>
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+    <p id="message"></p>
+</body>
+</html>
